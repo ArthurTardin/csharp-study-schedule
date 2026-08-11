@@ -109,3 +109,118 @@ O CLR gerencia várias coisas durante a execução, como:
 **O CLR é uma das principais partes do .NET Runtime responsável por fonecer o ambiente de execução das aplicações .NET.**
 
 ---
+
+# 6 Visual Studio
+
+O **Visual Studio** é um IDE (*Integrated Development Environment*) completa da Microsoft.
+Você pode escrever:
+```csharp
+    Console.WriteLine("Hello World!");
+```
+E executar/debugar diretamente pelo Visual Studio.
+
+## Quando usar?
+
+Ele é particularmente forte para:
+- C#
+- .NET
+- ASP.NET
+- APIs
+- Aplicações desktop
+- debugging
+- projetos grandes
+
+---
+
+# 7 VS code
+
+O **Visual Studio Code** é um editor de código.
+
+Ele é diferente do Visual Studio.
+Apesar dos nome semelhantes, são produtos diferentes. O VS Code é mais leve e extremamente extensível. Para trabalhar com C#, você instala as extensões apropriadas e utiliza o **.NET SDK** instalado no computador.
+
+---
+
+# 8 Terminal
+
+O terminal permite interagir com o sistema usando comandos de texto.
+No windows, você pode usar:
+- PowerShell
+- Windows Terminal
+- Prompt de comando
+No Linux/macOS, existem outros shells, como Bash. Para C#/.NET, você utiliza bastante o comando: `dotnet`
+Por exemplo:
+```bash
+    dotnet --version
+```
+O terminal é importante porque é preciso aprender a trabalhar com o **.NET CLI (Command-line Interface)**
+
+---
+
+# 9 `dotnet new`
+
+Esse comando cria projetos a partir de templates.
+Por exemplo:
+```bash
+    dotnet new console
+```
+Isso cria um projeto de aplicação de console.
+Você pode especificar uma pasta.
+```bash
+    dotnet new console -n MeuPrimeiroProgram
+```
+## O que é `.csproj`?
+
+É o arquivo que descreve o projeto **.NET**.
+Por exemplos, ele pode definir:
+- Framework utilizado
+- Dependências
+- Configurações
+- Propriedades do projeto
+
+---
+
+# 10 `dotnet run`
+
+Executa o projeto.
+Se você estiver dentro da pasta do projeto:
+```bash
+    dotnet run
+```
+Por exemplo:
+```csharp
+    Console.WriteLine("Olá, mundo!");
+```
+Executando:
+```bash
+    dotnet run
+```
+Saída:
+```text
+    Olá, mundo!
+```
+
+O `dotnet run`normalmente cuida das etapas necessárias para você conseguir executar o projeto.
+
+---
+
+# 11 `dotnet build`
+
+Compila o projeto
+```bash
+    dotnet build
+```
+
+Se houver um erro como:
+```csharp
+    int idade = "16";
+```
+O compilador vai reclamar, pois `"16"` é uma `string`, não um `int`
+
+---
+
+# 12 `dotnet restore`
+
+Esse comando restaura as dependências do projeto. Hoje, em muitos casos, **nem precisa executar `dotnet restore` Manualmente**, porque comando como `dotnet build` e `dotnet run` podem realizar a restauração automaticamente quando necessário.
+
+---
