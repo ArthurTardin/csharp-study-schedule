@@ -24,3 +24,21 @@ O **Microsoft .NET** é uma plataforma de desenvolvimento gratuita, de código a
 
 - **.NET Framework**: A versão original e mais antiga, focada **exclusivamente** no sistema operacional Windows.
 - **.NET (anteriormente .NET Core)**: A versão moderna, de código aberto e totalmente multiplataforma, que roda em Windows, Linux e macOS.
+
+---
+
+# O que é .NET SDK
+
+O **Microsoft .NET SDK** (Software Development Kit) é um pacote completo de ferramentas de programação, bibliotecas e compiladores que permite criar, compilar, testar e executar aplicativos desenvolvidos para a plataforma **.NET**.
+
+# O que ele inclui
+
+- **CLI do .NET (.NET CLI)**: Ferramenta de linha de comando (comando `dotnet`) para criar projetos, restaurar dependências e rodar aplicações.
+- **Runtime e Bibliotecas**: O ambiente necessário para executar o código, o qual já vem embutido no SDK.
+- **Compilador e Ferramentas de Build (MSBuild)**: Responsáveis por transformar o código escrito em linguagens como C#, F# ou Visual Basic em programas executáveis.
+
+# Para que serve e quem precisa dele
+- **Desenvolvedores**: É essencial para quem escreve códigos ou mantém projetos baseados em .NET.
+- **Usuários comuns**: Não é obrigatório se o objetivo for apenas usar o computador, embora alguns programas o instalem automaticamente para permitir o funcionamento de ferramentas específicas de desenvolvimento.
+
+---
