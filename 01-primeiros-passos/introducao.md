@@ -42,3 +42,34 @@ O **Microsoft .NET SDK** (Software Development Kit) é um pacote completo de fer
 - **Usuários comuns**: Não é obrigatório se o objetivo for apenas usar o computador, embora alguns programas o instalem automaticamente para permitir o funcionamento de ferramentas específicas de desenvolvimento.
 
 ---
+
+# Runtime em C#
+
+**Runtime** é o momento em que seu programa está **em execução**, depois de compilado, enquanto está rodando de fato na máquina do usuário.
+
+## As duas fases de um Programa C#
+
+1. **Compile time (tempo de compilação)**
+    - O código C# é convertido em **IL** (*Intermediate Language*), empacotado num `.dll` ou `.exe`.
+    - Erros de sintaxe, tipos incompatíveis, etc. São pegos aqui.
+2. **Runtime (tempo de execução)**
+    - O **CLR** (*Common language Runtime*), parte do .NET, pega esse IL e faz a compilação **JIT** (*Just-In-Time*) para código de máquina nativo, e então executa
+    - É aqui que o programa realmente "roda": lê arquivos, recebe input do usuário, faz cálculos, etc.
+    - Erros que só aparecem aqui são chamados de **runtime errors** (ex: `NullReferenceException`, `DivideByZeroException`), coisas que o compilador não conseguiu prever.
+
+## Exemplo prático
+
+```csharp
+    int[] numeros = {1, 2, 3};
+    Console.WriteLine(numeros[5]); // compila sem erro!
+```
+Esse código **compila perfeitamente** (sintaxe válida, tipos corretos), mas em **runtime** vai lançar um `IndexOutOfRangeException`, porque o array só tem índices de 0 a 2.
+
+## O "Runtime" como coisa concreta
+
+Em C#/.NET, "the runtime" também se refere ao próprio **CLR**, o ambiente que:
+- Gerencia memória (Garbage Collector)
+- Faz a compilação JIT
+- Trata exceções
+- Verifica tipos em tempo de execução
+- Gerencia threads
