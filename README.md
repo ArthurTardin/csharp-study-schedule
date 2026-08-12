@@ -8,7 +8,7 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 
 ### Etapa 1 - Primeiros Passos
 
-#### Ambiente
+#### 1 - Ambiente
 
 - O que é C#
 - O que é .NET
@@ -22,3 +22,19 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - `dotnet run`
 - `dotnet build`
 - `dotnet restore`
+
+#### 2 - Primeiro código
+
+- Main
+- Console.WriteLine
+- Console.Write
+- Comentários
+- Estrutura de um programa
+
+#### Exercícios
+
+- Hello World
+- Seu nome
+- Sua idade
+- Operações matemáticas
+- Conversor de temperatura
