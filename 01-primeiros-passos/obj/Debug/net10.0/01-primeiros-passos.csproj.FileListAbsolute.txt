@@ -1,0 +1,15 @@
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\bin\Debug\net10.0\01-primeiros-passos.exe
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\bin\Debug\net10.0\01-primeiros-passos.deps.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\bin\Debug\net10.0\01-primeiros-passos.runtimeconfig.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\bin\Debug\net10.0\01-primeiros-passos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\bin\Debug\net10.0\01-primeiros-passos.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.AssemblyInfo.cs
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.sourcelink.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\refint\01-primeiros-passos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\01-primeiros-passos.genruntimeconfig.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\01-primeiros-passos\obj\Debug\net10.0\ref\01-primeiros-passos.dll
