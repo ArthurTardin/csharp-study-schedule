@@ -38,3 +38,39 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Sua idade
 - Operações matemáticas
 - Conversor de temperatura
+
+### Etapa 2 - Variáveis e tipos
+
+#### Tipos
+
+- `int`
+- `long`
+- `short`
+- `byte`
+- `double`
+- `float`
+- `decimal`
+- `bool`
+- `char`
+- `string`
+
+#### Conceitos
+
+- Declaração
+- Inicialização
+- Atribuição
+- Constrantes
+- `var`
+- escopo
+- conversão de tipos
+- casting
+- `Parse`
+- `TryParse`
+
+#### Exercícios
+
+- IMC
+- Média Escolar
+- Conversor de moedas
+- Conversor de unidades
+- Cálculo de salário
