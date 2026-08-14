@@ -1,0 +1,15 @@
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\bin\Debug\net10.0\02-variaveis-e-tipos.exe
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\bin\Debug\net10.0\02-variaveis-e-tipos.deps.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\bin\Debug\net10.0\02-variaveis-e-tipos.runtimeconfig.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\bin\Debug\net10.0\02-variaveis-e-tipos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\bin\Debug\net10.0\02-variaveis-e-tipos.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.AssemblyInfo.cs
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.sourcelink.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\refint\02-variaveis-e-tipos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\02-variaveis-e-tipos.genruntimeconfig.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\02-variaveis-e-tipos\obj\Debug\net10.0\ref\02-variaveis-e-tipos.dll
