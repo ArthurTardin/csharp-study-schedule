@@ -96,3 +96,81 @@ Isso é útil (e às vezes essencial) para evitar erros, como checar se um objet
 ```
 
 ## Operador ternário
+
+Forma compacta de um `if/else` que retorna um valor, na sintaxe condição `?` `valorSeVerdadeiro : valorSeFalso`.
+
+```csharp
+    string resultado = (idade >= 18) ? "maior" : "Menor";
+```
+
+## Laços de repetição
+
+### `for`
+
+Usado quando você sabe (ou controla) quantas vezes o laço vai rodar. Tem três partes: inicialização, condição e icremento.
+
+```csharp
+    for (int i = 0; i < 5; i++)
+    {
+        Controle.WriteLine(i);
+    }
+```
+
+### `while`
+
+Repete enquanto a condição for verdadeira. A condição é chacada **antes** de cada execução, se for false já de início, o bloco nunca roda.
+
+```csharp
+    int contador = 0;
+    while (contador < 5)
+    {
+        Console.WriteLine(contador);
+        contador++;
+    }
+```
+
+### `do-while`
+
+Parecido com o `while`, mas a condição é checada **depois** da execução do bloco. Isso garante que o bloco rode **pelo menos uma vez**, mesmo que a condição já comece falsa.
+
+```csharp
+    int contador = 0;
+    do
+    {
+        Console.WriteLine(contador);
+        contador++;
+    } while (contador < 5);
+```
+
+Útil, por exemplo, em menus de console, onde você quer mostrar a opção pelo menos uma vez antes de checar se o usuário quer sair.
+
+### `foreach`
+
+Usado para percorrer todos os elementos de uma coleção (array, lista, etc), sem precisar controlar índice manualmente.
+
+```csharp
+    int[] numeros = {1, 2, 3, 4, 5};
+    foreach(int numero in numeros)
+    {
+        Console.WriteLine(numero);
+    }
+```
+### `break` e `continue`
+
+- `break`: Interrompe o laço imediatamente, saindo dele por completo.
+- `continue`: Pula para a próxima iteração do laço, ignorando o restante do código daquela volta.
+
+```csharp
+    for (int i = 0; i < 10; i++)
+    {
+        if (i == 5)
+        {
+            break; // Para o laço completamente quando i chega em 5
+        }
+        if (i % 2 == 0)
+        {
+            continue; //pula números pares, sem imprimir
+        }
+        Console.WriteLine(i);
+    }
+```
