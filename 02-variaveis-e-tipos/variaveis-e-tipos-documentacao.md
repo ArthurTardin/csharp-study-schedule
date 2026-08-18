@@ -140,5 +140,5 @@ Usados para converter `string` em número, muito comum ao ler dados do `Console.
 - [x] IMC
 - [x] Média escolar
 - [x] Conversor de moedas
-- [] Conversor de unidade
-- [] Cálculo de salário
+- [X] Conversor de unidade
+- [X] Cálculo de salário
