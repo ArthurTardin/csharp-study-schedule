@@ -1,0 +1,15 @@
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\bin\Debug\net10.0\04-estrutura-de-dados.exe
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\bin\Debug\net10.0\04-estrutura-de-dados.deps.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\bin\Debug\net10.0\04-estrutura-de-dados.runtimeconfig.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\bin\Debug\net10.0\04-estrutura-de-dados.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\bin\Debug\net10.0\04-estrutura-de-dados.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.AssemblyInfo.cs
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.sourcelink.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\refint\04-estrutura-de-dados.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\04-estrutura-de-dados.genruntimeconfig.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\04-estrutura-de-dados\obj\Debug\net10.0\ref\04-estrutura-de-dados.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "04-estrutura-de-dados/1.0.0": {
+        "runtime": {
+          "04-estrutura-de-dados.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "04-estrutura-de-dados/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
