@@ -132,3 +132,13 @@ Usados para converter `string` em número, muito comum ao ler dados do `Console.
     }
 ```
 - **Boa prática**: Sempre preferir `TryParse` quando o valor vem de uma entrada do usuário, porque `Parse` pode derrubar o programa se o texto não for válido.
+
+---
+
+## Exercícios
+
+- [x] IMC
+- [x] Média escolar
+- [x] Conversor de moedas
+- [] Conversor de unidade
+- [] Cálculo de salário
