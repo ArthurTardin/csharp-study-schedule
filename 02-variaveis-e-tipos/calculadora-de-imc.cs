@@ -1,8 +1,8 @@
 using System;
 
-namespace Exercicios
+namespace project02
 {
-    public class Program
+    public class IMC
     {
         static void Main(string[] args)
         {

@@ -1,7 +1,7 @@
 using System.Numerics;
 using System;
 
-public class Different
+public class Media
 {
     static void media()
     {

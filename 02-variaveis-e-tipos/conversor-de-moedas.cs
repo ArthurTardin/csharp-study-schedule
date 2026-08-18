@@ -2,9 +2,9 @@
 using System;
 using System.Reflection.Metadata.Ecma335;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-namespace programaIMC
+namespace project02
 {
-    public class Program
+    public class Moedas
     {
         public static void Main()
         {
