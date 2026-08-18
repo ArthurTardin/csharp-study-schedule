@@ -139,3 +139,13 @@ Arrays, listas e dicionários são **tipos de referência**, a variável guarda 
    Console.WriteLine(minhaLista.Count); // 1, a lista original foi alterada
 ```
 *(Esse tópico será aprofundado mais adiante, quando falarmos sobre stack, heap e referência em detalhe)*
+
+---
+
+## Exercícios
+
+- [] Lista de compras
+- [] Agenda de contatos
+- [] Cadastro de alunos com nota
+- [] Fila de atendimento
+- [] pilha de estoque
