@@ -124,6 +124,79 @@ Armazena pares de **chave e valor**, em que cada chave é única. Acesso rápido
     }
 ```
 
+## Stack (`stack<T>`)
+
+Estrutura de dados que segue o princípio **LIFO** (*Last In, First Out*, o último a entrar é o primeiro a sair). Pense em uma pilha de pratos: você só consegue tirar o de cima.
+```csharp
+    using System.Collections.Generic;
+
+    Stack<int> pilha = new Stack<int>();
+    pilha.push(1); // Empilha
+    pilha.push(2);
+    pilha.push(3);
+
+    Console.WriteLine(pilha.pop()) // 3 (remove e retorna o último que entrou)
+    Console.WriteLine(pilha.Peek()) // 2 (só espia o topo, sem remover)
+    Console.WriteLine(pilha.Count()) // 2
+```
+
+- Push(item) - Adiciona um elemento no topo
+- Pop() - remove e retorna o elemento do topo
+- Peek() - retorna o elemento do topo sem remover
+- Count() - Quantidde de elementos
+
+- **usos comuns:** Histórico de navegação (voltar página), desfazer/refazer(ctrl+Z), verificação de parênteses balanceados, chamada de métodos recursivos (na verdade é assim que o próprio CLR gerencia as chamadas de método na *call stack*)
+
+## Queue (`Queue<T>`)
+
+Estrutura de dados que segue o mesmo princípio **FIFO** (*First In, First Out*, o primeiro a entrar é o primeiro a sair). Pense em uma fila de banco: quem chegou primeiro é atendido primeiro.
+
+```csharp
+    using System.Collections.Generic;
+
+    Queue<string> fila = new Queue<string>();
+    fila.Enqueue("Arthur"); // entra na fila
+    fila.Enqueue("Cauã");
+    fila.Enqueue("Erika");
+
+    Console.WriteLine(fila.Dequeue()) // "Arthur" (Remove e retorna o primeiro que entrou)
+    Console.WriteLine(fila.Peek()) // "Cauã" (Só espia o primeiro, sem remover)
+    Console.WriteLine(fila.Count()) // 2
+```
+
+- Enqueue(item) - Adiciona um elemento no final da fila
+- Dequeue() - Remove e retorna o elemento do início da fila
+- Peek() - Retorna o elemento do início sem remover
+- Count - quantidade de elementos
+
+- **usos comuns:** Fila de impressão, processamento de tarefas na ordem de chegada, sistemas de atendimento.
+
+## HashSet(`HashSet<t>`)
+
+Coleção que armazena valores **únicos**, não permite duplicatas, e não mantém uma ordem garantida. Internamente usa uma tabela hash, o que torna operações como `Contains` muito rápidas, mesmo com muitos elementos (bem mais rápida que `Contains` em uma `List<T>`)
+
+```csharp
+    using System.Collections.Generic;
+
+    HashSet<int> numeros = new HashSet<int>();
+    numeros.Add(1);
+    numeros.Add(2);
+    numeros.Add(2); // ignorado, já existe
+
+    Console.WriteLine(numeros.Count()); // 2
+    Console.WriteLine(numeros.Contains(2)); // true
+```
+
+- Add(item) - Adiciona um elemento (ignora se já existir)
+- Remove(item) - Remove um elemento
+- Contains(item) - Verifica se o elemento existe (rápido)
+- UnionWith(outro) - une com outro conjunto
+- IntersectWith(outro) - Mantém apenas os elementos em comum
+- ExceptWith(outro) - Remove os elementos que estão no outro conjunto
+
+- **Usos comuns:** Eliminar duplicatas de uma coleção. Verificar rapidamente se um item já foi processado, operações de conjunto (união, interseção, diferença), como em matemática de conjuntos.
+
+
 ## Tipos de valor vs tipos de referência (introdução)
 
 Arrays, listas e dicionários são **tipos de referência**, a variável guarda um endereço de memória apontando para os dados, não os dados em si. Isso significa que, ao passar uma coleção para um método, alterações feitas nela dentro do método **refletem fora dele**(diferente do comportamento padrão de `int`, `double`, etc, que são tipos de valor).
