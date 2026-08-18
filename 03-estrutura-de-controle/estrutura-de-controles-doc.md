@@ -182,6 +182,6 @@ Usado para percorrer todos os elementos de uma coleção (array, lista, etc), se
 - [x] Par ou ímpar
 - [] tabuada
 - [x] Fibonacci
-- [] Jogo de adivinhação de números
-- [] Verificador de senha
-- [] Menu de opções de controle
+- [X] Jogo de adivinhação de números
+- [X] Verificador de senha
+- [X] Menu de opções de controle

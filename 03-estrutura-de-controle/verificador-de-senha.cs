@@ -1,14 +1,14 @@
 using System;
-namespace project
+namespace project03
 {
-    public class Program
+    public class passWord
     {
-        public static void Main(string[] args)
+        public static void Verifica(string[] args)
         {
             int passWord = 1234567;
 
             Console.WriteLine("Digite a senha:");
-            int.TryParse(Console.ReadLine(), out int result)
+            int.TryParse(Console.ReadLine(), out int result);
 
             if (result != passWord)
             {

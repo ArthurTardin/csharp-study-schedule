@@ -1,10 +1,10 @@
 //Sintex Padrão
 using System.Threading;
-namespace project
+namespace project03
 {
-    public class Program
+    public class Sequencia
     {
-        public static void Main()
+        public static void Fibonacci()
         {
             //Utilizar emojis
             Console.OutputEncoding = System.Text.Encoding.UTF8;

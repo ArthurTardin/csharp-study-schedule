@@ -1,8 +1,8 @@
 using System;
-
-public class Program
+namespace project03;
+public class ParouImpar
 {
-    public static void Main(string[] args)
+    public static void ParouImpa(string[] args)
     {
         Console.Write("Escreva um número: ");
 
