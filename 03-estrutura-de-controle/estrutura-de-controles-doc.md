@@ -180,7 +180,7 @@ Usado para percorrer todos os elementos de uma coleção (array, lista, etc), se
 ## Exercícios
 
 - [x] Par ou ímpar
-- [] tabuada
+- [X] tabuada
 - [x] Fibonacci
 - [X] Jogo de adivinhação de números
 - [X] Verificador de senha
