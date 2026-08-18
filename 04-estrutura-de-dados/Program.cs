@@ -47,5 +47,30 @@ namespace Project04
                     break;
             }
         }
+
+        public static void ListaDeContatos()
+        {
+            Dictionary<string, long> contatos = new Dictionary<string, long>();
+            Console.WriteLine("1 - Adicionar contato");
+            Console.WriteLine("2 - remover contato");
+
+            int.TryParse(Console.ReadLine(), out int choice);
+
+            switch (choice)
+            {
+                case 1:
+                    contatos.Add("Arthur", 2312332423432423);
+                break;
+    
+                case 2:
+                    contatos.Remove("Arthur");
+                break;
+
+
+                default:
+                    Console.WriteLine("Inválido");
+                break;
+            }
+        }
     }
 }
