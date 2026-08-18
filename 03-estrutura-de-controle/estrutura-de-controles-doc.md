@@ -174,3 +174,14 @@ Usado para percorrer todos os elementos de uma coleção (array, lista, etc), se
         Console.WriteLine(i);
     }
 ```
+
+---
+
+## Exercícios
+
+- [x] Par ou ímpar
+- [] tabuada
+- [x] Fibonacci
+- [] Jogo de adivinhação de números
+- [] Verificador de senha
+- [] Menu de opções de controle
