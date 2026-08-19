@@ -217,8 +217,8 @@ Arrays, listas e dicionários são **tipos de referência**, a variável guarda 
 
 ## Exercícios
 
-- [] Lista de compras
-- [] Agenda de contatos
-- [] Cadastro de alunos com nota
-- [] Fila de atendimento
-- [] pilha de estoque
+- [X] Lista de compras
+- [X] Agenda de contatos
+- [X] Cadastro de alunos com nota
+- [X] Fila de atendimento
+- [X] pilha de estoque
