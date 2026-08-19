@@ -72,5 +72,40 @@ namespace Project04
                 break;
             }
         }
+
+        public static void CadastroDeAlunosComNota()
+        {
+            Dictionary<string, int> notas = new Dictionary<string, int>();
+
+            notas.Add("Pablo", 8);
+            notas.Add("joão", 5);  
+        }
+
+        public static void FilaDeAtendimento()
+        {
+            Queue<string> fila = new Queue<string>();
+
+            fila.Enqueue("Pessoa 1");
+            fila.Enqueue("Pessoa 2");
+            fila.Enqueue("Pessoa 3");
+            fila.Enqueue("Pessoa 4");
+
+            Console.WriteLine(fila.Dequeue());
+        }
+
+        public static void PilhaDeHistorico()
+        {
+            Stack<int> pilha = new Stack<int>();
+
+            pilha.Push(1);
+            pilha.Push(2);
+            pilha.Push(3);
+            pilha.Push(4);
+
+            Console.WriteLine(pilha.Pop());
+
+        }
+
+        
     }
 }
