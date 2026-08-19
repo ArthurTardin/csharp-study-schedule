@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj": {}
+    "c:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj": {
+    "c:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj",
+        "projectUniqueName": "c:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj",
         "projectName": "04-estrutura-de-dados",
-        "projectPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj",
+        "projectPath": "c:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\04-estrutura-de-dados.csproj",
         "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\obj\\",
+        "outputPath": "c:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\04-estrutura-de-dados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
