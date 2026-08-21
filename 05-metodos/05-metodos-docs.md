@@ -191,7 +191,7 @@ Permitem "adicionar" um método novo a um tipo já existente (inclusive tipos do
 
 ## Exercícios
 
-- [ ] Calculadora com método separados (um método por operação: soma,c subtração, multiplicação, divisão)
-- [ ] Verificador de número primo (versão recursiva e versão iterativa)
-- [ ] Validador de CPF
-- [ ] Biblioteca de utilitários matemáticos (MDC, MMC, potência, fatorial, etc, cada um em seu próprio método)
+- [X] Calculadora com método separados (um método por operação: soma,c subtração, multiplicação, divisão)
+- [X] Verificador de número primo (versão recursiva e versão iterativa)
+- [X] Validador de CPF
+- [X] Biblioteca de utilitários matemáticos (MDC, MMC, potência, fatorial, etc, cada um em seu próprio método)
