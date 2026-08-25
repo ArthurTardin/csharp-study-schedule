@@ -289,6 +289,16 @@ Pegue o "Sistema de cadastro simples" da Etapa 6 e refatore aplicando herança/i
 - Download assíncrono de múltiplos arquivos
 - Consumo de API pública com HttpClient
 - Simulador de processamento paralelo de pedidos
+- **[DEBUG]**: Corrigir `async void` usado indevidamente e deadlock por `.Result` bloqueante em código assíncrono (código fornecido)
+- **[TESTE]**: Testes assíncronos para o consumo de API pública (mock de HttpClient)
+
+---
+
+#### Checkpoint 4 (após Etapa 11)
+
+Pegue o "Exportador de dados para CSV" da Etapa 10 e converta as operações de arquivo/rede para assíncronas. Leia código-fonte de uma lib pequena que usa `async/await` pesadamente e anote como ela evita bloqueio.
+
+---
 
 ### Etapa 12 - Banco de dados
 
@@ -308,22 +318,23 @@ Pegue o "Sistema de cadastro simples" da Etapa 6 e refatore aplicando herança/i
 - CRUD completo com Entity Framework
 - Sistema de biblioteca (livros, autores, empréstimos) com relacionamentos
 - Migração de banco com seed de dados
+- **[DEBUG]**: Corrigir relacionamento N:N mal configurado no EF Core (gerando tabela intermediária errada) e migration que quebra em dados existentes.
+- **[TESTE]**: Testes de integração básicos para o CRUD com EF Core (banco em memória)
 
-### Etapa 13 - Testes automatizados
+### Etapa 13 - Testes avançados e TDD
 
 #### Conceitos
 
-- Testes unitários
-- XUnit ou NUnit
-- Arrange, Act, Assert
-- Macking (Moq)
-- Introdução a TDD
+- Mocking (Moq)
+- TDD na prática (red-green-refactor)
+- Testes de integração vs unitários
+- Cobertura de teste (o que vale medir, o que não vale)
 
 #### Exercícios
 
-- Teste unitários para as classes de negócios já criadas
-- Cobertura de testes de um serviço de validação
-- Refatorar um projeto anterior seguindo TDD
+- Mockar dependência externa (ex: serviço de e-mail) em um teste
+- Escolher 1 exercício ainda sem teste do roadmap inteiro e cobrir do zero seguindo TDD estrito
+- **[DEBUG]**: Corrigir um teste "verde" que não testa nada de fato (assert fraco / sempre verdadeiro)
 
 ### Etapa 14 - Desenvolvimento Web com ASP.NET Core
 
@@ -343,6 +354,14 @@ Pegue o "Sistema de cadastro simples" da Etapa 6 e refatore aplicando herança/i
 - API REST de tarefas (To-DO-List)
 - API de cadastro de produtos com autenticação JWT
 - Sistema de blog com web API + banco de dados
+- **[DEBUG]**: Corrigir endpoint que retorna 500 por exceção não tratada e DI mal configurada(lifetime errado: Singleton vs Scroped)
+- **[TESTE]**: Testes de integração dos endpoints da API de To-Do (WebApplicationFactory)
+
+---
+
+#### Checkpoint 5 (Após Etapa 14)
+
+Pegue o "Sistema de biblioteca" da Etapa 12 (EF Core) e exponha como Web API REST completa, com testes de integração. Leia código-fonte de uma Web API open source cem ASP.NET Core e compare a estrutura de pastas dela com a sua.
 
 ### Etapa 15 - Boas práticas e arquitetura
 
@@ -360,6 +379,7 @@ Pegue o "Sistema de cadastro simples" da Etapa 6 e refatore aplicando herança/i
 - Refatorar uma API existente aplicando repository Pattern
 - Reestruturar um projeto em camadas
 - Implementar um Design Pattern em um projeto próprio
+- **[DEBUG]**: Identificar e corrigir violação de SRP e um "bod Object" em código (refatorar em camadas)
 
 ### Etapa 16 - Ferramentas e workflow profissional
 
@@ -378,6 +398,12 @@ Pegue o "Sistema de cadastro simples" da Etapa 6 e refatore aplicando herança/i
 - Criar pipeline simples em CI no GitHub Actions
 - Deploy de uma API em ambiente de nuvem
 
+---
+
+#### Checkpoint 6 (Após Etapa 16)
+
+Pegue a API do Checkpoint 5 e dockerize + suba um pipeline de Ci que roda os testes automaticamente a cada push. Se o pipeline não falha quando você quebra um teste de propósito, o pipeline está mal configurado, teste isso antes de seguir.
+
 ### Etapa 17 - Projeto final profssional
 
 #### Objetivo
@@ -389,3 +415,12 @@ Consolidar todo o aprendizado em um projeto completo, aplicando arquitetura em c
 - API REST completa de e-commerce (produtos, pedidos, usuários, autenticação, JWT)
 - Sistema de gestão (financeiro, estoque ou tarefas) com Front-end em React/Next.js consumindo a API
 - Deploy completo com Docker + banco de dados em nuvem.
+
+#### Critério de conclusão real
+
+Não é "todas as features implementadas". É:
+1. Tem testes automatizados rodando em CI
+2. Você consegue explicar cada decisão de arquitetura sem consultar nada
+3. Alguém de fora conseguiu quebrar o sistema fazendo algo que você não previu, e você corrigiu
+
+Projeto "terminado" sem isso é só código que roda, não é projeto profissional.
