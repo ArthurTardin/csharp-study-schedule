@@ -4,6 +4,14 @@
 
 Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem até o desenvolvimento de aplicações profissionais, registrando conceitos estudados, exercícios, projetos e minha evolução ao longo do tempo.
 
+## Regra do método
+
+1. **Nenhuma etapa termina só com exercícios "green-field**. Toda etapa a partir da 3 tem pelo menos 1 exercício de **debug**: pego um código já pronto e quebrado de propósito e conserto. Isso simula 70% do trabalho real.
+2. **Checkpoints de consolidação a cada 3 etapas.** Volto em um exercício antigo e refatoro com o que aprendi depois. Etapa concluída sem checkpoint não conta como concluída.
+3. **Testes entram na etapa 6**. A partir dali, todo exercício novo ganha pelo menos 1 teste unitário.
+4. **Leitura de código real a partir da Etapa 7**. Pelo menos 1 repositório open source pequeno em C# por checkpoint, só para ler e anotar padrões que eu não teria escrito sozinho.
+5. **Critério de avanço**: não é "li o conteúdo", é "consigo explicar o conceito para alguém leigo e o código quebra de menos formas óbvias quando eu testo por conta própria".
+
 ## Estrutura
 
 ### Etapa 1 - Primeiros Passos
@@ -102,6 +110,7 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - verificador de senha
 - jogo de adivinhação de número
 - Menu de opções no console
+- **[DEBUG]** Corrigir um menu de console com loop infinito e condição de sáida quebrada.
 
 ### Etapa 4 - Estruturas de dados
 
@@ -122,6 +131,15 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Cadastro de alunos com notas
 - fila de atendimento (Queue)
 - pilha de histórico (Stack)
+- **[DEBUG]**: Corrigir Dictionary que lança KeyNotFoundException e List com IndexOutOfRangeException.
+
+---
+
+#### Checkpoint 1 (após Etapa 4)
+
+Pegue o exercícios "Menu de opções no console" da etapa 3 e reescreva usando as estruturas de dados de Etapas 4 (ex: List para armazenar itens, Dictionary para opções). Se você não consegue fazer isso sem consultar a Etapa 3, a Etapa 3 não foi consolidada, revise antes de seguir.
+
+---
 
 ### Etapa 5 - Métodos
 
@@ -141,8 +159,9 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Verificador de número primo (recursivo e iterativo)
 - Validador de CPF
 - Biblioteca de utilitários matemáticos
+- **[DEBUG]**: Corrigir função recursiva sem case-base (stack overflow) e função com `ref`/`out` usados incorretamente.
 
-### Etapa 6 - Programação Orientada a Objetos (Fundamentos)
+### Etapa 6 - Programação Orientada a Objetos (Fundamentos) + Introdução a Testes
 
 #### Conceitos
 
@@ -154,12 +173,22 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Membros estático (static)
 - Métodos de instância vs métodos estáticos
 - sobrecarga de construtores
+- xUnit: Setup básico e primeiro teste
+- Arrange, Act, Assert
 
 #### Exercícios
 
 - Classe pessoa / Aluno / Produto
 - Sistema de cadastro simples (CRUD em memória)
 - Classe conta bancária (Depósito, saque, saldo)
+- **[DEBUG]**: Corrigir classe Conta bancária com bug de saldo negativo permitido.
+- **[TESTE]**: Escrever testes unitários para a Classe Conta Bancária (saque maior que saldo, depósito negativo, etc.)
+
+---
+
+#### Checkpoint 2 (após Etapa 6)
+
+Volte no "Validador de CPF" da Etapa 5 e escreva testes unitários cobrindo pelo menos 3 casos de borda (CPF vazio, CPF com letra, CPF válido). Lei 1 repositório pequeno no GitHub que use classes simples em C# e anote 2 padrões que você não teria escrito sozinho.
 
 ### Etapa 7 - Programação Orientada a objetos (Avançado)
 
@@ -179,6 +208,8 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Sistema de formas geométricas (áreas e perímetro polimórficos)
 - Sistema de funcionários (Herança: Gerente, vendedor)
 - Sistema de veículos com interfaces (IMovable, IRefuelable)
+- **[DEBUG]**: Corrigir hierarquia de herança onde `override` foi esquecido e o polimorfismo não funciona como esperada.
+- **[TESTE]**: Testes unitários para o sistema de formas geométricas (cada forma calcula área corretamente)
 
 ### Etapa 8 - Tratamento de exceções
 
@@ -195,6 +226,16 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Calculadora com tratamento de divisão por zero
 - Validador de entrada de dados robustos
 - Sistema de login com exceções customizadas
+- **[DEBUG]**: Corrigir código que usa `catch(Exception)` genérico escondendo bug real, e outro com `finally` mal usado.
+- **[TESTE]**: Testes cobrindo os caminhos de exceção do sistema de login
+
+---
+
+#### Checkpoint 3 (Após Etapa 8)
+
+Pegue o "Sistema de cadastro simples" da Etapa 6 e refatore aplicando herança/interfaces da Etapa 7 e tratamento de exceções da Etapa 8. Leia 1 repositório open source de tamanho pequeno/médio em C# (ex: um CLI tool) e anote como ele trata erros, compare com que você fez.
+
+---
 
 ### Etapa 9 - Coleções avançadas, Delegates e LINQ
 
@@ -212,6 +253,8 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Filtro de produtos por categoria/preço com LINQ
 - Sistema de notificação com events
 - Relatório de evendas agrupdo por LINQ
+- **[DEBUG]**: Corrigir query LINQ com `FirstOrDefault` não tratado (NullReferenceException) e lambda capturando varáveis errada em loop.
+- **[TESTE]**: Testes para o filtro de produtos com LINQ (lista vazia, nenhum resultado, múltiplos critérios)
 
 ### Etapa 10 - Manipulação de arquivos e serialização
 
@@ -228,6 +271,7 @@ Documentar minha jornada de aprendizado em C#, desde os fundamentos da linguagem
 - Sistema de log em arquivo
 - Exportador de dados para CSV
 - Salvar e carregar cadastro de usuários em JSON
+- **[DEBUG]**: Corrigir código que não fecha `StreamWriter`(Arquivo travado) e desserialização JSON que falha silenciosamente com propriedade faltando.
 
 ### Etapa 11 - Programação Assíncrona
 
