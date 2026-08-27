@@ -155,10 +155,10 @@ Cuidado com a complexidade: Dois loops aninhado de tamanho N roda NxN vezes. Iss
 
 ## Checklist antes de ir pros exercícios
 
-- [ ] Eu sei explicar por que `lista != null && lista.count? > 0` funciona, mas a ordem invertido quedra?
-
-- [ ] Eu sei diferenciare quando usar `for`(sei quantas vezes) vs `while` (não sei quantas vezes);
-- [ ] Eu sei identificar, olhando um while, se existe um risco de loop infinito (variável de controle não está sendo atualizada dentro do bloco)?
+- [X] Eu sei explicar por que `lista != null && lista.count? > 0` funciona, mas a ordem invertido quedra?
+- [x] Eu sei por que `do-while` roda pelo menos uma vez mesmo com a condição falsa de cara?
+- [X] Eu sei diferenciare quando usar `for`(sei quantas vezes) vs `while` (não sei quantas vezes);
+- [X] Eu sei identificar, olhando um while, se existe um risco de loop infinito (variável de controle não está sendo atualizada dentro do bloco)?
 
 ---
 
@@ -189,7 +189,7 @@ Abaixo está um código de menu de console com **bugs propositais**.
             case 1:
                 Console.WriteLine("Seu saldo é: 1000");
             case 2:
-                Console.WriteLine("Depósito realizado.");
+             A   Console.WriteLine("Depósito realizado.");
                 break;
             case 3:
                 Console.WriteLine("Saindo...");
