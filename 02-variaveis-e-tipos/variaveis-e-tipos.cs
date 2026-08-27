@@ -1,24 +1,66 @@
-﻿/* Variaveis e Tipos de Dados */
-int idade = 25; // Variável do tipo inteiro
-long populacao = 7800000000; // Variável do tipo long
-short temperatura = 30; // Variável do tipo short
-byte nivelDeBateria = 100; // Variável do tipo byte
-double altura = 1.75; // Variável do tipo double
-float peso = 70.5f; // Variável do tipo float
-decimal preco = 19.99m; // Variável do tipo decimal
-bool estaChovendo = false; // Variável do tipo booleano
-char letra = 'A'; // Variável do tipo char
-string nome = "João"; // Variável do tipo string
+﻿// Exercício 1:
 
-Console.WriteLine("Idade: " + idade);
-Console.WriteLine("População: " + populacao);
-Console.WriteLine("Temperatura: " + temperatura);
-Console.WriteLine("Nível de Bateria: " + nivelDeBateria);
-Console.WriteLine("Altura: " + altura);
-Console.WriteLine("Peso: " + peso);
-Console.WriteLine("Preço: " + preco);
-Console.WriteLine("Está Chovendo: " + estaChovendo);
-Console.WriteLine("Letra: " + letra);
-Console.WriteLine("Nome: " + nome);
+Console.Write("Digite o seu peso (kg): ");
+double kg;
+if (!double.TryParse(Console.ReadLine(), out kg))
+{
+    Console.WriteLine("Valor inválido.");
+    return;
+}
+
+Console.Write("Digite sua altura: ");
+double.TryParse(Console.ReadLine(), out double altura);
+
+double IMC = kg / (altura * altura);
+
+Console.WriteLine($"Seu IMC é: {IMC}");
+
+// Exercício 2:
+
+Console.Write("Digite a nota 1: ");
+double.TryParse(Console.ReadLine(), out double nota1);
+
+Console.Write("Digite a nota 2: ");
+double.TryParse(Console.ReadLine(), out double nota2);
+
+Console.Write("Digite a nota 3: ");
+double.TryParse(Console.ReadLine(), out double nota3);
+
+double media = (nota1 + nota2 + nota3) / 3;
+
+Console.WriteLine($"Sua média é: {media}");
+
+// Exercício 3:
+
+Console.Write("Digita o valor em Reais: ");
+double reais;
+if (!double.TryParse(Console.ReadLine(), out reais))
+{
+    Console.WriteLine("Número inválido");
+    return;
+}
+
+Console.WriteLine($"Seu valor convertido para dolar é: {reais * 5.16}");
+
+// Exercício 4:
+
+Console.Write("Digite o valor(M): ");
+double.TryParse(Console.ReadLine(), out double metros);
+
+Console.WriteLine($"Seu valor em CM é: {metros * 100} e em KM: {metros / 1000}");
+
+// Exercício 5:
+
+const int mesBase = 220;
+Console.Write("Digite o seu salário base: ");
+double.TryParse(Console.ReadLine(), out double salarioBase);
+
+Console.Write("Digite as horas extras trabalhadas: ");
+int.TryParse(Console.ReadLine(), out int horasExtras);
+
+double ganhoHora = salarioBase / mesBase;
+Console.WriteLine($"Seu salário líquido é: {salarioBase + (horasExtras * ganhoHora * 1.5)}");
+
+
 
 
