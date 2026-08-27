@@ -147,7 +147,8 @@ Todos os exercícios abaixo devem ler valores do usuário via `Console.ReadLine(
 
 1. **IMC**: lei peso (kg) e altura (m), calcule IMC (`peso / (altura * altura)`) imprima o resultado.
 2. **Média Escolar**: Leia 3 notas, calcule e imprima a média.
-3. **Conversor de unidades**: Leia um valor em metros, imprima convertido para centímetros e para quilômetros
+3. **Conversor de moedas**: Leia um valor em reais e uma cotação (ex: dolar), imprima o valor convertido.
+4. **Conversor de unidades**: Leia um valor em metros, imprima convertido para centímetros e para quilômetros
 5. **Cálculo de salário**: leia salário-base e hora extra trabalhadas, calcule salário final considerando hora extra a 50% a mais do valor da hora normal (você vai precisar definir quantas horas tem o mês-base, deixe isso como constante)
 
 **Atenção**: Em pelo menos 2 exercícios (sua escolha), use `TryParse` explicitamente e trate o caso de entrada inválida imprimindo uma mensagem de erro, não deixe o programa quebrar silenciosamente.
