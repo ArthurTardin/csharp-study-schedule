@@ -1,111 +1,137 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-namespace Project04
+﻿// // Exercício 1
+
+// List<string> compras = new List<string>();
+// compras.Add("Arroz");
+// compras.Add("Feijão");
+// compras.Add("Batata");
+// compras.Add("Carne");
+// compras.Add("Salada");
+
+// compras.Remove("Arroz");
+
+// foreach (var compra in compras)
+// {
+//     Console.WriteLine(compra);
+// }
+
+// int total = compras.Count;
+
+// Console.WriteLine($"total de compras: {total}");
+
+// // Exercício 2
+
+// Dictionary<string, string> contatos = new Dictionary<string, string>();
+
+// contatos.Add("Arthur", "19999999");
+// contatos.Add("Caua", "129999999");
+// contatos.Add("Roberto", "551122999");
+
+// if (contatos.ContainsKey("Caua"))
+// {
+//     Console.WriteLine(contatos["Caua"]);
+// }
+// else
+// {
+//     Console.WriteLine("Contato não encontrado.");
+// }
+
+// // Exercício 3
+
+// Queue<string> filaAtendimento = new Queue<string>();
+
+// filaAtendimento.Enqueue("Joao");
+// filaAtendimento.Enqueue("Carlos");
+// filaAtendimento.Enqueue("Pedro");
+// filaAtendimento.Enqueue("Felipe");
+
+// filaAtendimento.Dequeue();
+// filaAtendimento.Dequeue();
+
+// foreach (var pessoa in filaAtendimento)
+// {
+//     Console.WriteLine(pessoa);
+// }
+
+// // Exercício 4
+
+// Stack<string> historico = new Stack<string>();
+
+// historico.Push("Página 1");
+// historico.Push("Página 2");
+// historico.Push("Página 3");
+// historico.Push("Página 4");
+
+// historico.Pop();
+// historico.Pop();
+
+// foreach (var pagina in historico)
+// {
+//     Console.WriteLine(pagina);
+// }
+
+List<string> lista = new List<string>();
+bool sair = false;
+
+while (!sair)
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            ListaDeCompras();
-        }
-
-        public static void ListaDeCompras()
-        {
-            List<string> compras = new List<string>{"Arroz", "Feijão", "Salada", "Carne"};
-            Console.WriteLine("Lista de compras: ");
-
-            Console.WriteLine("1 - Adicionar produto");
-            Console.WriteLine("2 - Remover produto");
-            Console.WriteLine("3 - Ver lista");
-
-            Console.Write("Escolha sua opção: ");
-            int.TryParse(Console.ReadLine(), out int choice);
-
-            switch (choice)
-            {
-                case 1:
-                    Console.WriteLine("Digite o nome do produto:");
-                    string add = Console.ReadLine()!;
-
-                    compras.Add(add);
-                    break;
-                case 2:
-                    Console.WriteLine("Digite o nome do produto");
-                    string rm = Console.ReadLine()!;
-
-                    compras.Remove(rm);
-                    break;
-                case 3:
-                    foreach(string item in compras)
-                    {
-                        Console.WriteLine(item);
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Escolha uma opção válida.");
-                    break;
-            }
-        }
-
-        public static void ListaDeContatos()
-        {
-            Dictionary<string, long> contatos = new Dictionary<string, long>();
-            Console.WriteLine("1 - Adicionar contato");
-            Console.WriteLine("2 - remover contato");
-
-            int.TryParse(Console.ReadLine(), out int choice);
-
-            switch (choice)
-            {
-                case 1:
-                    contatos.Add("Arthur", 2312332423432423);
-                break;
+    Console.WriteLine("\n1 - Adicionar");
+    Console.WriteLine("2 - Remover");
+    Console.WriteLine("3 - Ver tudo");
+    Console.WriteLine("4 - Sair");
+    Console.Write("Escolha uma opção: ");
     
-                case 2:
-                    contatos.Remove("Arthur");
-                break;
+    int.TryParse(Console.ReadLine(), out int escolha);
 
+    switch (escolha)
+    {
+        case 1:
+            Console.Write("Digite o nome do que você quer adicionar: ");
+            string entradaAdicionar = Console.ReadLine() ?? "";
 
-                default:
-                    Console.WriteLine("Inválido");
+            if (string.IsNullOrWhiteSpace(entradaAdicionar))
+            {
+                Console.WriteLine("Digite um valor válido!");
                 break;
             }
-        }
 
-        public static void CadastroDeAlunosComNota()
-        {
-            Dictionary<string, int> notas = new Dictionary<string, int>();
+            lista.Add(entradaAdicionar);
+            Console.WriteLine("Adicionado com sucesso!");
+            break;
 
-            notas.Add("Pablo", 8);
-            notas.Add("joão", 5);  
-        }
+        case 2:
+            Console.Write("Digite o nome do que você deseja remover: ");
+            string entradaRemover = Console.ReadLine() ?? "";
 
-        public static void FilaDeAtendimento()
-        {
-            Queue<string> fila = new Queue<string>();
+            if (string.IsNullOrWhiteSpace(entradaRemover) || !lista.Contains(entradaRemover))
+            {
+                Console.WriteLine("Esse produto não existe ou o nome é inválido!");
+                break;
+            }
 
-            fila.Enqueue("Pessoa 1");
-            fila.Enqueue("Pessoa 2");
-            fila.Enqueue("Pessoa 3");
-            fila.Enqueue("Pessoa 4");
+            lista.Remove(entradaRemover);
+            Console.WriteLine("Removido com sucesso!");
+            break;
 
-            Console.WriteLine(fila.Dequeue());
-        }
+        case 3:
+            if (lista.Count == 0)
+            {
+                Console.WriteLine("A lista está vazia!");
+                break;
+            }
 
-        public static void PilhaDeHistorico()
-        {
-            Stack<int> pilha = new Stack<int>();
+            foreach (var item in lista)
+            {
+                Console.WriteLine($"item: {item}");
+            }
+            break;
 
-            pilha.Push(1);
-            pilha.Push(2);
-            pilha.Push(3);
-            pilha.Push(4);
+        case 4:
+            Console.WriteLine("Saindo...");
+            sair = true;
+            break;
 
-            Console.WriteLine(pilha.Pop());
-
-        }
-
-        
+        default:
+            Console.WriteLine("Opção inválida!");
+            break;
     }
 }

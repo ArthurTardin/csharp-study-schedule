@@ -1,224 +1,195 @@
-# Etapa 4 - Estrutura de dados
+# Etapa 4 - Estruturas de Dados
 
-## Objetivo
+## 1. Arrays
 
-Aprender a armazenar e manipular coleções de valores: arrays, listas, e dicionários, além das operações mais comuns sobre eles.
+Coleção de tamanho **fixo**, definido na criação, de um único tipo:
 
-## Arrays
-
-Uma array é uma coleção de **tamanho fixo**, em que todos os elementos são do mesmo tipo. Uma vez criado, o tamanho não muda.
-
-```csharp
-    int[] numeros = {1, 2, 3, 4, 5};
-    string[] nomes = new string[3]; //array de 3 posições, vazio (com valores padrão)
-```
-### Acessando elementos
-
-Os elementos são acessados por índice, começando em 0.
-
-```csharp
-    int[] numeros = {10, 20, 30};
-    Console.WriteLine(numeros[0]); // 10
-    numeros[1] = 99; // altera o segundo elemento
+```Csharp
+    int[] numeros = new int[5]; // 5 posições, todas com valor default (0 para int)
+    numero[0] = 10;
+    numero[1] = 20;
+    int[] outrosNumeros = {1, 2, 3, 4, 5}; // Inicialização direta
 ```
 
-### Propriedade `Length`
+Acesso por índice, começando em `0`. Acessar um índice que não existe (`numero[5]` num array de 5 posições, índice válido 0-4) lança `IndexOutOfRangeException`, **em runtime**, não erro de compilação; O compilador não sabe prever isso.
 
-Retorna a quantidade de elementos do array.
+Tamanho fixo é a limitação central: se você precisar de mais espaço depois de criado, não dá para "aumentar" um array, precisa criar um novo. É exatamente essa limitação que motiva a próxima estrutura.
 
-```csharp
-    Console.WriteLine(numeros.length); // 3
+---
+
+## 2. List<T>
+
+Coleção de tamanho **dinâmico**, cresce e encolhe conforme você adicona/remove itens. `T` é um placeholder de tipo (Você vai estudar Generics a fundo mais para frente, por enquanto, trate `List<int>` como "lista que só aceita int", `List<string>` como "Lista que só aceita string").
+
+```Csharp
+   List<string> nomes = new List<string>();
+   nomes.Add("Arthur"); 
+   nomes.Add("Maria");
+
+   nomes.Remove("Maria"); // Remove pelo valor
+   nomes.RemoveAt(0); // Remove pelo índice
+   bool existe = nomes.Contains("Arthur");
+   int total = nomes.Count;
 ```
 
-### Percorrendo uma array
+Diferença importante que confunde quem vem de array: `array.length` vs `list.Count`. São conceitos equivalentes, nomes diferentes, e usar o errado é erro de compilação, não algo sutil. Igual array, acessar índice inexistente (`nomes[10]` numa lista de 2 itens) lança `ArgumentOutOfRangeException` em runtime.
 
-```csharp
-    for (int i = 0; i < numeros.length; i++)
-    {
-        Console.WriteLine(numeros[i]);
-    }
-    // ou, de forma mis simples:
-    foreach(int numero in numeros)
-    {
-        Console.WriteLine(numero);
-    }
-```
+### Percorrendo uma List
 
-### Arrays Multidimensionais
-
-```csharp
-    int[,] matriz = new int[2, 3]; // 2 linhas, 3 colunas.
-    matriz[0, 0] = 1;
-    matriz[1, 2] = 9;
-```
-
-## Lista (`List<t>`)
-
-Diferente do array, a List<T> tem **tamanho dinâmico**, pode crescer ou diminuir durante a execução. É um tipo genérico (<T> representa o tipo dos elementos que ela vai guardar), presente no namespace `System.Collections.Generic`.
-
-```csharp
-    using System.Collections.Generic;
-
-    List<string> nomes = new List<string>();
-    nomes.add("Arthur");
-    nomes.add("Maria");
-```
-
-### Métodos comuns de `List<T>`
-
-- Add(item) - Adiciona um elemento no final
-- Remove(item) - Remove a primeira ocorrência do elemento
-- RemoveAt(indice) - Remove o elemento em uma posição específica
-- Contains(intem) - Verifica se o elemento existe na lista (retorna bool)
-- IndexOf(intem) - retorna o índice do elemento (ou -1 se não encontrado)
-- Count - Propriedade com a quantidade atual de elementos
-- Clear() - Remove todos os elementos
-- Sort() - Ordena os elementos
-
-```csharp
-    List<int> numeros = new List<string> {5, 3, 8, 1};
-    numeros.Add(10);
-    numeros.Remove(3);
-    numeros.Sort();
-
-    Console.WriteLine(numeros.Count); // 4
-```
-
-## Array vs List: Quando usar cada um
-
-- Use `array` quando o tamanho da coleção é conhecido e fixo (ex: dias da semana, meses do ano).
-- Use `List<T>` quando a quantidade de elementos pode variar durante a execução (ex: itens de um carrinho de compras, cadastro de usuários).
-
-## Dicionário (`Dictionary<TKey, TValue>)
-
-Armazena pares de **chave e valor**, em que cada chave é única. Acesso rápido ao valor através da chave, sem precisar percorrer a coleção inteira.
-
-```csharp
-    using System.Collections.Generic;
-
-    Dictionary<string, int> idades = new Dictionary<string, int>();
-    idades.Add("Arthur", 25);
-    idades["Maria"] = 30; // Outra forma de adicionar/atualizar
-
-    Console.WriteLine(idades["Arthur"]); // 25
-```
-
-### Métodos e propriedades comuns
-
-- Add(chave, valor) - Adiciona um par chave-valor (erro se a chave já existir)
-- ContainsKey(chave) - Verifica se a chave existe
-- Remove(chave) - Remove o par pela chave
-- TryGetValue(chave, out valor) - tenta obter o valor sem lançar exceção se a chave não existir
-- Keys - coleção com todas as chaves
-- Values - coleção com todos os valores
-
-```csharp
-    if (idades.TryGetVue("Arthur", out int idade))
-    {
-        Console.WriteLine(idade);
-    }
-
-    foreach(KeyValuePair<string, int> par in idades)
-    {
-        Console.WriteLine($"{par.key}: {par.Value}")
-    }
-```
-
-## Stack (`stack<T>`)
-
-Estrutura de dados que segue o princípio **LIFO** (*Last In, First Out*, o último a entrar é o primeiro a sair). Pense em uma pilha de pratos: você só consegue tirar o de cima.
-```csharp
-    using System.Collections.Generic;
-
-    Stack<int> pilha = new Stack<int>();
-    pilha.push(1); // Empilha
-    pilha.push(2);
-    pilha.push(3);
-
-    Console.WriteLine(pilha.pop()) // 3 (remove e retorna o último que entrou)
-    Console.WriteLine(pilha.Peek()) // 2 (só espia o topo, sem remover)
-    Console.WriteLine(pilha.Count()) // 2
-```
-
-- Push(item) - Adiciona um elemento no topo
-- Pop() - remove e retorna o elemento do topo
-- Peek() - retorna o elemento do topo sem remover
-- Count() - Quantidde de elementos
-
-- **usos comuns:** Histórico de navegação (voltar página), desfazer/refazer(ctrl+Z), verificação de parênteses balanceados, chamada de métodos recursivos (na verdade é assim que o próprio CLR gerencia as chamadas de método na *call stack*)
-
-## Queue (`Queue<T>`)
-
-Estrutura de dados que segue o mesmo princípio **FIFO** (*First In, First Out*, o primeiro a entrar é o primeiro a sair). Pense em uma fila de banco: quem chegou primeiro é atendido primeiro.
-
-```csharp
-    using System.Collections.Generic;
-
-    Queue<string> fila = new Queue<string>();
-    fila.Enqueue("Arthur"); // entra na fila
-    fila.Enqueue("Cauã");
-    fila.Enqueue("Erika");
-
-    Console.WriteLine(fila.Dequeue()) // "Arthur" (Remove e retorna o primeiro que entrou)
-    Console.WriteLine(fila.Peek()) // "Cauã" (Só espia o primeiro, sem remover)
-    Console.WriteLine(fila.Count()) // 2
-```
-
-- Enqueue(item) - Adiciona um elemento no final da fila
-- Dequeue() - Remove e retorna o elemento do início da fila
-- Peek() - Retorna o elemento do início sem remover
-- Count - quantidade de elementos
-
-- **usos comuns:** Fila de impressão, processamento de tarefas na ordem de chegada, sistemas de atendimento.
-
-## HashSet(`HashSet<t>`)
-
-Coleção que armazena valores **únicos**, não permite duplicatas, e não mantém uma ordem garantida. Internamente usa uma tabela hash, o que torna operações como `Contains` muito rápidas, mesmo com muitos elementos (bem mais rápida que `Contains` em uma `List<T>`)
-
-```csharp
-    using System.Collections.Generic;
-
-    HashSet<int> numeros = new HashSet<int>();
-    numeros.Add(1);
-    numeros.Add(2);
-    numeros.Add(2); // ignorado, já existe
-
-    Console.WriteLine(numeros.Count()); // 2
-    Console.WriteLine(numeros.Contains(2)); // true
-```
-
-- Add(item) - Adiciona um elemento (ignora se já existir)
-- Remove(item) - Remove um elemento
-- Contains(item) - Verifica se o elemento existe (rápido)
-- UnionWith(outro) - une com outro conjunto
-- IntersectWith(outro) - Mantém apenas os elementos em comum
-- ExceptWith(outro) - Remove os elementos que estão no outro conjunto
-
-- **Usos comuns:** Eliminar duplicatas de uma coleção. Verificar rapidamente se um item já foi processado, operações de conjunto (união, interseção, diferença), como em matemática de conjuntos.
-
-
-## Tipos de valor vs tipos de referência (introdução)
-
-Arrays, listas e dicionários são **tipos de referência**, a variável guarda um endereço de memória apontando para os dados, não os dados em si. Isso significa que, ao passar uma coleção para um método, alterações feitas nela dentro do método **refletem fora dele**(diferente do comportamento padrão de `int`, `double`, etc, que são tipos de valor).
-
-```csharp
-   static void AdicionarItem(List<string> lista)
+```Csharp
+   foreach (string nome in nomes)
    {
-    lista.Add("novo item");
+        Console.WriteLine(nome);
+   } 
+```
+
+`foreach` é preferível a `for` quando você só precisa ler cada item, sem precisar de índice numérico. Usa `for` quando precisa do índice (ex: modificar item específico, comparar posições)
+
+---
+
+## 3. Dictionary<Tkey, Tvalue>
+
+Coleção de pares `chave-valor`. Diferente de List (acesso por posição numérica), Dictionary acessa por chave, de qualquer tipo:
+
+```Csharp
+   Dictionary<string, int> idades = new Dictionary<string, int>();
+   idades.Add("Arthur", 17);
+   idades["Maria"] = 30; // Forma alternativa de adicionar/atualizar
+
+   int idadeArthur = idades["Arthur"]; // Acesso direto pela chave
+```
+
+**Risco real**: Acessar uma chave que não existe (`idades["pedros"]` sem ter sido adicionado) lança `KeyNotFoundException` em runtime. isso é o erro mais comum de quem começa a usar Dictionary, acessar direto sem checar se a chave existe primeiro.
+
+Forma segura de checar antes de acessar:
+
+```Csharp
+   if (idades.ContainsKey("Pedro"))
+   {
+        Console.WriteLine(idade["Pedro"]);
+   } 
+   else
+   {
+        Console.WriteLine("Chave não encontrada.");
+   }
+```
+
+Ou, mais eficiente (evitar checar duas vezes, uma no `ContainsKey`, outra implícita no acesso):
+
+```Csharp
+   if (idades.TryGetValue("Pedro", out int idade))
+   {
+        Console.WriteLine(idade);
+   } 
+   else
+   {
+        Console.WriteLine("Chave não encontrada.");
+   }
+```
+
+Repare no padrão: `TryGetValue` segue a mesma filosofia do `TryParse` que você já usa, método que tenta uma operação arriscada e retorna `bool` indicando sucesso, em vez de lançar exceção direto. Esse padrão (`TryX` retornando bool + `out`) é recorrente em C#, não é coincidência de nome.
+
+### Percorrendo um Dictionary
+
+```Csharp
+   foreach (KeyValuePair<string, int> par in idades)
+   {
+        Console.WriteLine($"{par.key}: {par.value}");
    } 
 
-   List<string> minhaLista = new List<string>();
-   AdicionarItem(minhaLista);
-   Console.WriteLine(minhaLista.Count); // 1, a lista original foi alterada
+   // ou, de forma mais moderna e comum:
+   foreach (var (nome, idade) in idades)
+   {
+        Console.WriteLine($"{nome}: {idade}");
+   }
 ```
-*(Esse tópico será aprofundado mais adiante, quando falarmos sobre stack, heap e referência em detalhe)*
+
+---
+
+## 4. Queue<T> (fila)
+
+Estrutura **FIFO** (First In, First Out), o primeiro item que entra é o primeiro que sai. Pense em fila de banco.
+
+```Csharp
+   Queue<string> filaAtendimento = new Queue<string>();
+   filaAtendimento.Enqueue("Cliente 1");
+   filaAtendimento.Enqueue("Cliente 2");
+
+   string proximo = filaAtendimento.Dequeue(); // Remove e retorna "Cliente 1"
+   string espiando = filaAtendimento.Peek(); // Olha o próximo sem remover
+```
+
+Chamar `Dequeue()` ou `Peek()` numa fila **vazia** lança `InvalidOperationException` em runtime. Sempre confira `filaAtendimento.Count > 0` antes, se não tiver certeza que a fila tem item.
+
+---
+
+## 5. Stack<T> (Pilha)
+
+Estrutura **LIFO** (Last In, First Out), o último item que entra é o primeiro que sai, Pense em pilha de pratos, ou o botão "Voltar" do navegador (histórico).
+
+```Csharp
+   Stack<string> historico = new Stack<string>();
+   historico.Push("Página 1");
+   historico.Push("Página 2");
+
+   string ultima = historico.Pop(); // remove e retorna "página 2"
+   string espiando = historico.Peek(); // Olha o topo sem remover 
+```
+
+Mesmo risco que Queue: `Pop()` ou `Peek()` numa pilha vazia lança `InvalidOperationException`.
+
+## Quando usar qual
+
+- **List**: Quando você precisa de acesso aleatório por índice, ou não importa ordem de entrada/saída
+- **Queue**: Quando a ordem de processamento precisa respeitar "quem chegou primeiro" (ex: fila de tarefas, fila de impressão).
+- **Stack**: Quando você precisa desfazer a última ação, ou processar do mais recente pro mais antigo (ex: histórico de navegação, undo de editor de texto).
+
+---
+
+## Checklist antes de ir pros exercícios
+
+- [ ] Eu sei a diferença entre `array,Length` e `list.Count`, e sei que confudir isso é erro de compilação?
+- [ ] Eu sei por que acessar `dicionario["chave_inexistente"] direto é arriscado, e qual método usar para evitar isso sem exceção?
+- [ ] Eu sei explicar a diferença entre FIFO (Queue) e LIFO (Stack) com um exemplo do mundo real para cada?
+- [ ] Eu sei que `Dequeue`, `Pop`, `Peek` numa estrutura vazia lançam exceção em runtime, não erro de compilação?
 
 ---
 
 ## Exercícios
 
-- [X] Lista de compras
-- [X] Agenda de contatos
-- [X] Cadastro de alunos com nota
-- [X] Fila de atendimento
-- [X] pilha de estoque
+1. **Lista de compras**: Adicione itens a uma `List<string>`, remova um item específico, imprima a lista final e a quantidade de itens
+2. **Agenda de contatos**: use `Dictionary<string, string>` (nome -> telefone), adicione 3 contatos, busque um contato por nome tratando o caso de não encontrar (sem lançar exceção pro usuário)
+3. **Fila de atendimento**: Simule uma fila de atendimento com `Queue<string>`: Adicione 4 pessoas, atenda (remova) 2 em ordem, imprima quem ainda está na fila
+4. **Pilha de histórico de navegação**: simule histórico de páginas visitadas com `Stack<string>`: visite 4 páginas, "volte" (pop) 2 vezes, imprima a página atual após os 2 voltares
+
+### [DEBUG]
+
+Código abaixo com bugs propositais envolvendo Dictionary e List. Ache e corrija.
+
+```Csharp
+   Dictionary<string, int> estoque = new Dictionary<string, int>();
+estoque.Add("Maçã", 50);
+estoque.Add("Banana", 30);
+
+Console.Write("Digite o produto para consultar: ");
+string produto = Console.ReadLine();
+
+int quantidade = estoque[produto];
+Console.WriteLine($"Estoque de {produto}: {quantidade}");
+
+List<string> produtosEsgotados = new List<string>();
+
+for (int i = 0; i <= estoque.Count; i++)
+{
+    if (estoque.ElementAt(i).Value == 0)
+    {
+        produtosEsgotados.Add(estoque.ElementAt(i).Key);
+    }
+}
+
+Console.WriteLine($"Produtos esgotados: {produtosEsgotados.Count}"); 
+```
+
+### Checkpoint 1
+
+Volte no exercício "**Menu de opções no controle**" da Etapa 3 e reescreva usando estruturas dessa etapa, por exemplo, trocar variáveis soltar por uma `List<string>` de itens de "estoque" ou "saldo", ou usar `Dictionary<int, string>` para mapear opções -> ação.
