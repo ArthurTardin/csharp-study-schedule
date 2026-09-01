@@ -1,0 +1,15 @@
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\bin\Debug\net10.0\05-metodos.exe
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\bin\Debug\net10.0\05-metodos.deps.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\bin\Debug\net10.0\05-metodos.runtimeconfig.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\bin\Debug\net10.0\05-metodos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\bin\Debug\net10.0\05-metodos.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.AssemblyInfo.cs
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.sourcelink.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\refint\05-metodos.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\05-metodos.genruntimeconfig.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\05-metodos\obj\Debug\net10.0\ref\05-metodos.dll
