@@ -202,3 +202,26 @@ public class Program
         Console.WriteLine("Carregando arquivo...");
     }
 }
+public class Validadores
+{
+    public static bool VerificadorCPF(string cpf)
+    {
+        if (string.IsNullOrWhiteSpace(cpf))
+        {
+            return false;
+        }
+        if (cpf.Length != 11)
+        {
+            return false;
+        }
+
+        foreach (var letter in cpf)
+        {
+            if (!char.IsDigit(letter))
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}

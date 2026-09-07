@@ -1,26 +1,35 @@
-﻿// // exercício 1:
-
-// using System.Reflection.Metadata.Ecma335;
-
-// static bool VerificadorCPF(string cpf)
+﻿// exercício 1:
+// namespace project;
+// public class Validadores
 // {
-//     if (string.IsNullOrWhiteSpace(cpf))
+//     public static bool VerificadorCPF(string cpf)
 //     {
-//         return false;
-//     }
-//     if (cpf.Length != 11)
-//     {
-//         return false;
-//     }
-
-//     foreach (var letter in cpf)
-//     {
-//         if (!char.IsDigit(letter))
+//         if (string.IsNullOrWhiteSpace(cpf))
 //         {
 //             return false;
 //         }
+//         if (cpf.Length != 11)
+//         {
+//             return false;
+//         }
+
+//         foreach (var letter in cpf)
+//         {
+//             if (!char.IsDigit(letter))
+//             {
+//                 return false;
+//             }
+//         }
+//         return true;
 //     }
-//     return true;
+// }
+
+// public class Program
+// {
+//     static void Main()
+//     {
+//        Validadores.VerificadorCPF("54332998793"); 
+//     }
 // }
 
 // Console.WriteLine(VerificadorCPF("50222222222"));
