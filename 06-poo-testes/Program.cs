@@ -194,3 +194,11 @@ public class ContaBancaria
         Saldo -= valor;
     }
 }
+
+public class Program
+{
+    public static void Main()
+    {
+        Console.WriteLine("Carregando arquivo...");
+    }
+}

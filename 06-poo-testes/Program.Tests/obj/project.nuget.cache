@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "qY3Y1NoI/fw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\06-poo-testes\\Program.Tests\\Program.Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adm\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.codecoverage\\18.9.0\\microsoft.codecoverage.18.9.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.net.test.sdk\\18.9.0\\microsoft.net.test.sdk.18.9.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.testplatform.objectmodel\\18.9.0\\microsoft.testplatform.objectmodel.18.9.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.testplatform.testhost\\18.9.0\\microsoft.testplatform.testhost.18.9.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit\\2.9.3\\xunit.2.9.3.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit.analyzers\\1.18.0\\xunit.analyzers.1.18.0.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit.assert\\2.9.3\\xunit.assert.2.9.3.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit.core\\2.9.3\\xunit.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit.extensibility.core\\2.9.3\\xunit.extensibility.core.2.9.3.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit.extensibility.execution\\2.9.3\\xunit.extensibility.execution.2.9.3.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\xunit.runner.visualstudio\\4.0.0\\xunit.runner.visualstudio.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

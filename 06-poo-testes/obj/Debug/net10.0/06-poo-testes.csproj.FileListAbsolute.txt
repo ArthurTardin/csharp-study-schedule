@@ -1,0 +1,15 @@
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.AssemblyInfo.cs
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.sourcelink.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\bin\Debug\net10.0\06-poo-testes.exe
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\bin\Debug\net10.0\06-poo-testes.deps.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\bin\Debug\net10.0\06-poo-testes.runtimeconfig.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\bin\Debug\net10.0\06-poo-testes.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\bin\Debug\net10.0\06-poo-testes.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\refint\06-poo-testes.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\06-poo-testes.genruntimeconfig.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\06-poo-testes\obj\Debug\net10.0\ref\06-poo-testes.dll

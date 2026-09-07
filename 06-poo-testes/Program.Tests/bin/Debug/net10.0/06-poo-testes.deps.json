@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "06-poo-testes/1.0.0": {
+        "runtime": {
+          "06-poo-testes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "06-poo-testes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
