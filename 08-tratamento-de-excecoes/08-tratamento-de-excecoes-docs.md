@@ -121,10 +121,10 @@ Criar sua própria clsse de exceção, herdando o Exception (ou de uma exceção
 
 ## Checklist antes de ir pros exercícios
 
-- [ ] Eu sei por que `catch (Exception ex)` genérico deve vir depois de catches mais específicos, nunca antes
-- [ ] Eu sei a diferença prática entre `catch` e `finally`, o que executa sempre e o que executa só condicionalmente?
-- [ ] Eu sei explicar por que "validar antes com TryParse" e "capturar depois com try/catch" não são a mesma estratégia, e quando cada uma faz mais sentido?
-- [ ] Eu sei criar uma exceção customizada herdando de `Exception`?
+- [X] Eu sei por que `catch (Exception ex)` genérico deve vir depois de catches mais específicos, nunca antes
+- [X] Eu sei a diferença prática entre `catch` e `finally`, o que executa sempre e o que executa só condicionalmente?
+- [X] Eu sei explicar por que "validar antes com TryParse" e "capturar depois com try/catch" não são a mesma estratégia, e quando cada uma faz mais sentido?
+- [X] Eu sei criar uma exceção customizada herdando de `Exception`?
 
 ---
 
