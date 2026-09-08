@@ -1,0 +1,15 @@
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\bin\Debug\net10.0\07-heranca-polimorfismo-interfaces.exe
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\bin\Debug\net10.0\07-heranca-polimorfismo-interfaces.deps.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\bin\Debug\net10.0\07-heranca-polimorfismo-interfaces.runtimeconfig.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\bin\Debug\net10.0\07-heranca-polimorfismo-interfaces.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\bin\Debug\net10.0\07-heranca-polimorfismo-interfaces.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.AssemblyInfoInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.AssemblyInfo.cs
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.csproj.CoreCompileInputs.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.sourcelink.json
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\refint\07-heranca-polimorfismo-interfaces.dll
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.pdb
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\07-heranca-polimorfismo-interfaces.genruntimeconfig.cache
+C:\Users\adm\Desktop\Familia_Organizada\01_Arthur\Programacao\CSharpStudySchedule\csharp-study-schedule\07-heranca-polimorfismo-interfaces\obj\Debug\net10.0\ref\07-heranca-polimorfismo-interfaces.dll

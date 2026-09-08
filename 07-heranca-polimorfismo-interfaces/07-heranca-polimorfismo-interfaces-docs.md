@@ -197,10 +197,10 @@ Convenção: nome de interface começa com `I` maiúsculo (`IMovable`, não `Mov
 
 ## Checklist antes de ir pros exercícios
 
-- [ ] Eu sei explicar a diferença entre "É um" (herança) e "tem um" (composição), com um exemplo próprio?
-- [ ] Eu sei por que um método sem `virtual` na base não pode ter `override` na derivada?
-- [ ] Eu sei descrever, com suas palavras, o que aconteceria no loop do item 3 se `FazerSom` não fosse `virtual`?
-- [ ] Eu sei quando escolher classe abstrata e quando escolher interface, com critério, não só "porque parece certo"?
+- [X] Eu sei explicar a diferença entre "É um" (herança) e "tem um" (composição), com um exemplo próprio?
+- [X] Eu sei por que um método sem `virtual` na base não pode ter `override` na derivada?
+- [X] Eu sei descrever, com suas palavras, o que aconteceria no loop do item 3 se `FazerSom` não fosse `virtual`?
+- [X] Eu sei quando escolher classe abstrata e quando escolher interface, com critério, não só "porque parece certo"?
 
 ---
 
