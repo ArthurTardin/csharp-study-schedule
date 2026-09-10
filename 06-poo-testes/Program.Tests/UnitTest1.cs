@@ -1,6 +1,5 @@
 ﻿using System;
 using Xunit;
-using project;
 using System.Security;
 
 namespace Program.Tests;

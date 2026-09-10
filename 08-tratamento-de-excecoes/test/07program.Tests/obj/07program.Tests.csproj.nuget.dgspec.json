@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj": {}
+    "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj": {
+    "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj",
         "projectName": "exercicios",
-        "projectPath": "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj",
-        "packagesPath": "C:\\Users\\26171603\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\obj\\",
+        "projectPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj",
+        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\26171603\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -61,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -339,22 +345,28 @@
         }
       }
     },
-    "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj": {
+    "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj",
         "projectName": "07program.Tests",
-        "projectPath": "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj",
-        "packagesPath": "C:\\Users\\26171603\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\obj\\",
+        "projectPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\07program.Tests.csproj",
+        "packagesPath": "C:\\Users\\adm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\test\\07program.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\26171603\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\adm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -362,8 +374,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj": {
-                "projectPath": "C:\\Users\\26171603\\Documents\\GitHub\\CronogramaCSharp\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj"
+              "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj": {
+                "projectPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\08-tratamento-de-excecoes\\exercicios\\exercicios.csproj"
               }
             }
           }
@@ -378,7 +390,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.400"
+        "SdkAnalysisLevel": "10.0.300"
       },
       "frameworks": {
         "net10.0": {
@@ -418,7 +430,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

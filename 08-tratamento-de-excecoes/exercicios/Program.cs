@@ -71,7 +71,7 @@
 
 // Exercício 3
 
-
+// namespace project;
 // public class CredenciaisInvalidasException : Exception
 // {
 //     public CredenciaisInvalidasException() : base("Credenciais inválidas, tente novamente!") { }
@@ -197,8 +197,6 @@
 // Checkpoint
 
 
-using System.Security.Cryptography;
-
 public class IdadeInvalidaException : ArgumentException
 {
     public IdadeInvalidaException() : base("Idade inválida, tente novamente") { }
@@ -209,17 +207,22 @@ public class FaltaDeDadosException : ArgumentException
     public FaltaDeDadosException() : base("Faltam dados, tente novamente") { }
 }
 
+public class NaoEncontradoException : ArgumentException
+{
+    public NaoEncontradoException() : base("Funcionário não encontrado!") { }
+}
+
 interface ICadastrar
 {
     public void Cadastrar(Funcionario funcionario);
 }
 interface IRemover
 {
-    public void Remover();
+    public void Remover(string name);
 }
 interface IProcurar
 {
-    public void Procurar();
+    public void Procurar(string name);
 }
 public abstract class Pessoa
 {
@@ -256,25 +259,83 @@ public class Funcionario : Pessoa, ICadastrar, IRemover, IProcurar
 
     public void Cadastrar(Funcionario funcionario)
     {
-         if (pessoas.Contains(funcionario)) new FaltaDeDadosException();
+         if (pessoas.Contains(funcionario)) throw new FaltaDeDadosException();
         pessoas.Add(funcionario);
     }
 
-    public void Remover()
+    public void Remover(string name)
+{
+    Funcionario? encontrado = null;
+    foreach (Funcionario funcionario in pessoas)
     {
-         foreach(Funcionario funcionario in pessoas)
+        if (funcionario.Name == name)
         {
-            if (funcionario.Name == Name)
-            {
-                pessoas.Remove(funcionario);
-            }
+            encontrado = funcionario;
+            break;
         }
-        new FaltaDeDadosException();
     }
 
-    public FaltaDeDadosException Procurar()
+    if (encontrado == null)
+        throw new NaoEncontradoException();
+
+    pessoas.Remove(encontrado);
+}
+
+    public void Procurar(string name)
     {
-        return new FaltaDeDadosException();
+        Funcionario? encontrado = null;
+        foreach(Funcionario funcionario in pessoas)
+        {
+            if (funcionario.Name == name)
+            {
+                encontrado = funcionario;
+                break;
+            }
+        }
+
+        if (encontrado == null)
+        {
+             throw new NaoEncontradoException();
+        }
+
+        Console.WriteLine($"Pessoa encontrada: {encontrado}");
     }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+
+        Funcionario funcionario = new Funcionario("Arthur", 18);
+
+        funcionario.Cadastrar(funcionario);
+        Console.WriteLine("Cadastrado com sucesso.");
+
+        try
+        {
+            funcionario.Cadastrar(funcionario);
+        }
+        catch (FaltaDeDadosException ex)
+        {
+            Console.WriteLine($"Erro esperado: {ex.Message}");
+        }
+
+        funcionario.Procurar(funcionario.Name);
+
+        // Testa sucesso do Remover
+        funcionario.Remover(funcionario.Name);
+        Console.WriteLine("Removido com sucesso.");
+
+        try
+        {
+            funcionario.Procurar(funcionario.Name);
+        }
+        catch (NaoEncontradoException ex)
+        {
+            Console.WriteLine($"Erro esperado: {ex.Message}");
+        }
+    }
+
 }
     

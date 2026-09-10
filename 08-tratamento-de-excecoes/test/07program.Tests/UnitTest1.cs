@@ -1,4 +1,6 @@
-﻿namespace _07program.Tests;
+﻿using project;
+using Xunit;
+namespace _07program.Tests;
 
 public class UnitTest1
 {
