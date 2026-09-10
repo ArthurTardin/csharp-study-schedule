@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("07-heranca-polimorfismo-interfaces")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+623a2ee59be276cb473b0b6a7fce6b3e1860b873")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb10277c8ef8d50eaa27af1816f5fa3f9d7a2bc3")]
 [assembly: System.Reflection.AssemblyProductAttribute("07-heranca-polimorfismo-interfaces")]
 [assembly: System.Reflection.AssemblyTitleAttribute("07-heranca-polimorfismo-interfaces")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

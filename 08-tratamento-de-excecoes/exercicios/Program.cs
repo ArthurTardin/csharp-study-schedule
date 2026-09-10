@@ -43,7 +43,7 @@
 //             Console.WriteLine($"Valor inválido: {ex.Message}");
 //             return false;
 //         }
-       
+
 //     }
 // }
 
@@ -61,79 +61,79 @@
 //         else
 //         {
 //            Metodo.IndicePedido(indice);
-            
-            
+
+
 //         }
 
-        
+
 //     }
 // }
 
 // Exercício 3
 
 
-public class CredenciaisInvalidasException : Exception
-{
-    public CredenciaisInvalidasException() : base("Credenciais inválidas, tente novamente!") { }
-}
-public class Metodo
-{
-    public string Usuario { get; set; }
-    public string Senha { get; set; }
+// public class CredenciaisInvalidasException : Exception
+// {
+//     public CredenciaisInvalidasException() : base("Credenciais inválidas, tente novamente!") { }
+// }
+// public class Metodo
+// {
+//     public string Usuario { get; set; }
+//     public string Senha { get; set; }
 
-    public Metodo (string usuario, string senha)
-    {
-        this.Usuario = usuario;
-        this.Senha = senha;
-    }
-    public bool Login (string usuario, string senha)
-    {
-        if (usuario == Usuario && senha == Senha)
-        {
-            return true;
-        }
-        else
-        {
-            throw new CredenciaisInvalidasException();
-        }
-    }
-}
+//     public Metodo (string usuario, string senha)
+//     {
+//         this.Usuario = usuario;
+//         this.Senha = senha;
+//     }
+//     public bool Login (string usuario, string senha)
+//     {
+//         if (usuario == Usuario && senha == Senha)
+//         {
+//             return true;
+//         }
+//         else
+//         {
+//             throw new CredenciaisInvalidasException();
+//         }
+//     }
+// }
 
-public class Program
-{
-    public static void Main()
-    {
-        string usuario = "pessoa1";
-        string senha = "12345";
+// public class Program
+// {
+//     public static void Main()
+//     {
+//         string usuario = "pessoa1";
+//         string senha = "12345";
 
-        Metodo pessoa1 = new Metodo("pessoa1", "123456");
+//         Metodo pessoa1 = new Metodo("pessoa1", "123456");
 
-        try
-        {
-            pessoa1.Login(usuario, senha);
-            Console.WriteLine("Sucesso!");
-        }
-        catch (CredenciaisInvalidasException ex)
-        {
-            Console.WriteLine($"Erro: {ex.Message}");
-        }
+//         try
+//         {
+//             pessoa1.Login(usuario, senha);
+//             Console.WriteLine("Sucesso!");
+//         }
+//         catch (CredenciaisInvalidasException ex)
+//         {
+//             Console.WriteLine($"Erro: {ex.Message}");
+//         }
 
-        Metodo pessoa2 = new Metodo("pessoa2", "1234");
+//         Metodo pessoa2 = new Metodo("pessoa2", "1234");
 
-        string usuario2 = "pessoa2";
-        string senha2 = "1234";
+//         string usuario2 = "pessoa2";
+//         string senha2 = "1234";
 
-        try
-        {
-            pessoa2.Login(usuario2, senha2);
-             Console.WriteLine("Sucesso!");
-        }
-        catch (CredenciaisInvalidasException ex)
-        {
-            Console.WriteLine($"Erro: {ex.Message}");
-        }
-    }
-}
+//         try
+//         {
+//             pessoa2.Login(usuario2, senha2);
+//              Console.WriteLine("Sucesso!");
+//         }
+//         catch (CredenciaisInvalidasException ex)
+//         {
+//             Console.WriteLine($"Erro: {ex.Message}");
+//         }
+//     }
+// }
 
 // Exercício 4
 
@@ -193,3 +193,88 @@ public class Program
 // }
 
 // ProcessarPedido(10, 0);
+
+// Checkpoint
+
+
+using System.Security.Cryptography;
+
+public class IdadeInvalidaException : ArgumentException
+{
+    public IdadeInvalidaException() : base("Idade inválida, tente novamente") { }
+} 
+
+public class FaltaDeDadosException : ArgumentException
+{
+    public FaltaDeDadosException() : base("Faltam dados, tente novamente") { }
+}
+
+interface ICadastrar
+{
+    public void Cadastrar(Funcionario funcionario);
+}
+interface IRemover
+{
+    public void Remover();
+}
+interface IProcurar
+{
+    public void Procurar();
+}
+public abstract class Pessoa
+{
+    public static List<Pessoa> pessoas = new List<Pessoa>();
+    private int Age;
+    public string Name { get; set; }
+
+    public int _Age
+    {
+        get { return Age; }
+        set
+        {
+            if ( value < 0)
+            {
+                throw new IdadeInvalidaException();
+            }
+
+            Age = value;
+        }
+    }
+
+    public Pessoa (string name, int age)
+    {
+        this.Name = name;
+        this._Age = age;
+    }
+
+
+}
+
+public class Funcionario : Pessoa, ICadastrar, IRemover, IProcurar
+{
+    public Funcionario(string name, int age) : base(name, age) { }
+
+    public void Cadastrar(Funcionario funcionario)
+    {
+         if (pessoas.Contains(funcionario)) new FaltaDeDadosException();
+        pessoas.Add(funcionario);
+    }
+
+    public void Remover()
+    {
+         foreach(Funcionario funcionario in pessoas)
+        {
+            if (funcionario.Name == Name)
+            {
+                pessoas.Remove(funcionario);
+            }
+        }
+        new FaltaDeDadosException();
+    }
+
+    public FaltaDeDadosException Procurar()
+    {
+        return new FaltaDeDadosException();
+    }
+}
+    

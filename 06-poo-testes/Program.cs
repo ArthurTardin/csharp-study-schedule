@@ -49,62 +49,62 @@
 
 // // Exercício 3
 
-// class Pessoa
-// {
+class Pessoa
+{
 
-//     private int idade;
-//     public string Nome { get; set; }
+    private int idade;
+    public string Nome { get; set; }
     
-//     public int Idade
-//     {
-//         get { return idade; }
-//         set
-//         {
-//             if (value < 0)
-//             {
-//                 throw new ArgumentException("idade iválida.");
-//             }
-//             idade = value;
-//         }
-//     }
-// }
+    public int Idade
+    {
+        get { return idade; }
+        set
+        {
+            if (value < 0)
+            {
+                throw new ArgumentException("idade iválida.");
+            }
+            idade = value;
+        }
+    }
+}
 
-// class Cadastrar
-// {
-//     static List<Pessoa> pessoas = new List<Pessoa>();
+class Cadastrar
+{
+    static List<Pessoa> pessoas = new List<Pessoa>();
 
-//     public bool Adicionar (Pessoa pessoa)
-//     {
-//         if (pessoas.Contains(pessoa)) return false;
-//         pessoas.Add(pessoa);
-//         return true;
-//     }
+    public bool Adicionar (Pessoa pessoa)
+    {
+        if (pessoas.Contains(pessoa)) return false;
+        pessoas.Add(pessoa);
+        return true;
+    }
 
-//     public bool Remover(string nome)
-//     {
-//          foreach(Pessoa pessoa in pessoas)
-//         {
-//             if (pessoa.Nome == nome)
-//             {
-//                 pessoas.Remove(pessoa);
-//                 return true;
-//             }
-//         }
-//         return false;
-//     }
+    public bool Remover(string nome)
+    {
+         foreach(Pessoa pessoa in pessoas)
+        {
+            if (pessoa.Nome == nome)
+            {
+                pessoas.Remove(pessoa);
+                return true;
+            }
+        }
+        return false;
+    }
 
-//     public bool Procurar(string nome)
-//     {
-//          foreach(Pessoa pessoa in pessoas)
-//         {
-//             if (pessoa.Nome == nome)
-//             {
-//                 return true;
-//             }
-//         }
-//         return false;
-//     }
-// }
+    public bool Procurar(string nome)
+    {
+         foreach(Pessoa pessoa in pessoas)
+        {
+            if (pessoa.Nome == nome)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+}
 
 // // Exercício 4
 
@@ -151,77 +151,77 @@
 
 // debug
 
-namespace project;
-public class ContaBancaria
-{
-    private decimal saldo;
+// namespace project;
+// public class ContaBancaria
+// {
+//     private decimal saldo;
 
-    public ContaBancaria(decimal saldoInicial)
-    {
-        Saldo = saldoInicial;
-    }
+//     public ContaBancaria(decimal saldoInicial)
+//     {
+//         Saldo = saldoInicial;
+//     }
 
-    public decimal Saldo
-    {
-        get { return saldo; }
-        private set
-        {
-            if (value < 0)
-            {
-                throw new ArgumentException("Valor inválido.");
-            }
+//     public decimal Saldo
+//     {
+//         get { return saldo; }
+//         private set
+//         {
+//             if (value < 0)
+//             {
+//                 throw new ArgumentException("Valor inválido.");
+//             }
 
-            saldo = value;
-        }
-    }
+//             saldo = value;
+//         }
+//     }
 
-    public void Depositar(decimal valor)
-    {
-        if (valor <= 0)
-            throw new ArgumentException("O valor do depósito deve ser positivo.");
+//     public void Depositar(decimal valor)
+//     {
+//         if (valor <= 0)
+//             throw new ArgumentException("O valor do depósito deve ser positivo.");
 
-        Saldo += valor;
-    }
+//         Saldo += valor;
+//     }
 
-    public void Sacar(decimal valor)
-    {
-        if (valor <= 0)
-            throw new ArgumentException("O valor do saque deve ser positivo.");
+//     public void Sacar(decimal valor)
+//     {
+//         if (valor <= 0)
+//             throw new ArgumentException("O valor do saque deve ser positivo.");
 
-        if (valor > Saldo)
-            throw new InvalidOperationException("Saldo insuficiente.");
+//         if (valor > Saldo)
+//             throw new InvalidOperationException("Saldo insuficiente.");
 
-        Saldo -= valor;
-    }
-}
+//         Saldo -= valor;
+//     }
+// }
 
-public class Program
-{
-    public static void Main()
-    {
-        Console.WriteLine("Carregando arquivo...");
-    }
-}
-public class Validadores
-{
-    public static bool VerificadorCPF(string cpf)
-    {
-        if (string.IsNullOrWhiteSpace(cpf))
-        {
-            return false;
-        }
-        if (cpf.Length != 11)
-        {
-            return false;
-        }
+// public class Program
+// {
+//     public static void Main()
+//     {
+//         Console.WriteLine("Carregando arquivo...");
+//     }
+// }
+// public class Validadores
+// {
+//     public static bool VerificadorCPF(string cpf)
+//     {
+//         if (string.IsNullOrWhiteSpace(cpf))
+//         {
+//             return false;
+//         }
+//         if (cpf.Length != 11)
+//         {
+//             return false;
+//         }
 
-        foreach (var letter in cpf)
-        {
-            if (!char.IsDigit(letter))
-            {
-                return false;
-            }
-        }
-        return true;
-    }
-}
+//         foreach (var letter in cpf)
+//         {
+//             if (!char.IsDigit(letter))
+//             {
+//                 return false;
+//             }
+//         }
+//         return true;
+//     }
+// }
