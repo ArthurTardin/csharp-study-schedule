@@ -302,14 +302,14 @@ LINQ é **lazy** (avaliação adiada) — `Where`, `Select`, `OrderBy` não exec
 
 ## Checklist antes de ir pros exercícios
  
-- [ ] Eu sei explicar, com minhas palavras, o que um delegate representa (uma referência a método, não a um valor comum)?
-- [ ] Eu sei a diferença entre `Func`, `Action` e `Predicate`, qual tem retorno, qual não tem, qual é sempre bool?
-- [ ] Eu sei por que `event` restringe de fora da classe pra só `+=`/`-=`, em vez de permitir substituição total?
-- [ ] Eu sei quando `HashSet` é preferível a `List` (dica: duplicata e busca frequente)?
-- [ ] Eu sei explicar, com um exemplo, quando `FirstOrDefault` retorna `null` e por que isso é perigoso se eu não checar antes de usar o resultado?
-- [ ] Eu sei a diferença entre `Where` (filtra) e `Select` (transforma)?
-- [ ] Eu sei ler uma lambda simples (`p => p.Idade >= 18`) e explicar o que ela faz, sem travar na sintaxe?
-- [ ] Eu sei por que `Single` lança exceção em dois cenários diferentes (nenhum resultado E múltiplos resultados), não só um?
+- [X] Eu sei explicar, com minhas palavras, o que um delegate representa (uma referência a método, não a um valor comum)?
+- [X] Eu sei a diferença entre `Func`, `Action` e `Predicate`, qual tem retorno, qual não tem, qual é sempre bool?
+- [X] Eu sei por que `event` restringe de fora da classe pra só `+=`/`-=`, em vez de permitir substituição total?
+- [X] Eu sei quando `HashSet` é preferível a `List` (dica: duplicata e busca frequente)?
+- [X] Eu sei explicar, com um exemplo, quando `FirstOrDefault` retorna `null` e por que isso é perigoso se eu não checar antes de usar o resultado?
+- [X] Eu sei a diferença entre `Where` (filtra) e `Select` (transforma)?
+- [X] Eu sei ler uma lambda simples (`p => p.Idade >= 18`) e explicar o que ela faz, sem travar na sintaxe?
+- [X] Eu sei por que `Single` lança exceção em dois cenários diferentes (nenhum resultado E múltiplos resultados), não só um?
 
 ---
 
@@ -320,6 +320,7 @@ LINQ é **lazy** (avaliação adiada) — `Where`, `Select`, `OrderBy` não exec
 1. **HashSet de e-mails únicos**: simule um cadastro que rejeita e-mails duplicados usando `HashSet<string>`, mostrando mensagem diferente se o e-mail já existia ou se foi adicionado com sucesso (use o retorno `bool` de `Add`)
 2. **Calculadora com delegate**: crie um `delegate` customizado (`Operacao`, como no exemplo do documento) e um método `Executar` que recebe a operação e dois números, testando com pelo menos 3 operações diferentes (soma, subtração, multiplicação)
 3. **Sistema de notificação com Events**: crie uma classe `Pedido` com um `event Action<string>? StatusAlterado`. Um método `AtualizarStatus(string novoStatus)` que dispara o evento. No `Main`, inscreva pelo menos 2 "ouvintes" diferentes (ex: um que imprime no console, outro que simula "enviar email") e dispare a atualização
+
 ### Bloco 2 — LINQ
  
 4. **Filtro de produtos**: dada uma `List<Produto>` (reaproveita a classe da Etapa 6), use `Where` para filtrar produtos com `Preco` acima de um valor, e `Select` para extrair só os nomes desses produtos
