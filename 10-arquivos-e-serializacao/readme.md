@@ -175,10 +175,10 @@ string jsonFormatado = JsonSerializer.Serialize(pessoa, opcoes);
 
 ## Checklist antes de ir pros exercícios
  
-- [ ] Eu sei por que esquecer de fechar um `StreamWriter` pode causar perda de dados, mesmo que o programa não trave?
-- [ ] Eu sei a diferença entre `File.WriteAllText` (sobrescreve) e `File.AppendAllText` (adiciona ao final)?
-- [ ] Eu sei por que `Deserialize<T>` pode retornar `null`, e por que isso exige a mesma cautela que `FirstOrDefault`?
-- [ ] Eu sei nomear pelo menos 3 exceções específicas de operação de arquivo, além da genérica `IOException`?
+- [X] Eu sei por que esquecer de fechar um `StreamWriter` pode causar perda de dados, mesmo que o programa não trave?
+- [X] Eu sei a diferença entre `File.WriteAllText` (sobrescreve) e `File.AppendAllText` (adiciona ao final)?
+- [X] Eu sei por que `Deserialize<T>` pode retornar `null`, e por que isso exige a mesma cautela que `FirstOrDefault`?
+- [X] Eu sei nomear pelo menos 3 exceções específicas de operação de arquivo, além da genérica `IOException`?
 
 ---
 
