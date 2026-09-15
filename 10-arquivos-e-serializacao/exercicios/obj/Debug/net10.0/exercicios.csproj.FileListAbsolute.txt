@@ -1,0 +1,15 @@
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\bin\Debug\net10.0\exercicios.exe
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\bin\Debug\net10.0\exercicios.deps.json
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\bin\Debug\net10.0\exercicios.runtimeconfig.json
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\bin\Debug\net10.0\exercicios.dll
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\bin\Debug\net10.0\exercicios.pdb
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.AssemblyInfoInputs.cache
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.AssemblyInfo.cs
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.csproj.CoreCompileInputs.cache
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.sourcelink.json
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.dll
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\refint\exercicios.dll
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.pdb
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\exercicios.genruntimeconfig.cache
+C:\Users\26171603\Documents\GitHub\csharp-study-schedule\10-arquivos-e-serializacao\exercicios\obj\Debug\net10.0\ref\exercicios.dll
