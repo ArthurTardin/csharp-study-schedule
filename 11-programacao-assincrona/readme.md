@@ -204,10 +204,10 @@ usado quando você quer permitir interrupção elegante, ex: usuário clica "Can
 
 ## Checklist antes de ir pro exercícios
 
-- [ ] Eu sei explicar a diferença entre `Thread.Sleep(2000)` (bloqueia) e `await Task.Delay(2000)` (não bloqueia)?
-- [ ] Eu sei por quê `async void` é uma armadilha, e qual é a alternativa correta?
-- [ ] Eu sei por quê `.Result` pode criar deadlock, e quando usar `await` em vez disso?
-- [ ] Eu sei quando usar `Task.WhenAll` (espera tudo) vs `Task.WhenAny` (espera primeira)?
+- [X] Eu sei explicar a diferença entre `Thread.Sleep(2000)` (bloqueia) e `await Task.Delay(2000)` (não bloqueia)?
+- [X] Eu sei por quê `async void` é uma armadilha, e qual é a alternativa correta?
+- [X] Eu sei por quê `.Result` pode criar deadlock, e quando usar `await` em vez disso?
+- [X] Eu sei quando usar `Task.WhenAll` (espera tudo) vs `Task.WhenAny` (espera primeira)?
 
 ---
 
