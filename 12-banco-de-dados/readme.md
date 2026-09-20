@@ -338,11 +338,11 @@ Cuidado: carregar tudo com `.ToList()` em um grande banco é lento, você deveri
 
 ## Checklist antes de ir pros exercícios
  
-- [ ] Eu sei por quê SQL injection é perigoso e como `@parametro` protege?
-- [ ] Eu sei a diferença entre ADO.NET (manual) e EF Core (automático)?
-- [ ] Eu sei por quê `using` é essencial pra conexão/DbContext?
-- [ ] Eu sei quando usar `.Include()` pra carregar relacionamentos?
-- [ ] Eu sei que `.ToList()` em LINQ to Entities força execução no banco?
+- [X] Eu sei por quê SQL injection é perigoso e como `@parametro` protege?
+- [X] Eu sei a diferença entre ADO.NET (manual) e EF Core (automático)?
+- [X] Eu sei por quê `using` é essencial pra conexão/DbContext?
+- [X] Eu sei quando usar `.Include()` pra carregar relacionamentos?
+- [X] Eu sei que `.ToList()` em LINQ to Entities força execução no banco?
 
 ---
 
