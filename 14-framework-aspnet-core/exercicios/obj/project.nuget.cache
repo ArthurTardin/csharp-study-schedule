@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "5H9iECvbYSA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\14-framework-aspnet-core\\exercicios\\exercicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.9\\microsoft.aspnetcore.openapi.10.0.9.nupkg.sha512",
+    "C:\\Users\\adm\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "O pacote 'Microsoft.OpenApi' 2.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\14-framework-aspnet-core\\exercicios\\exercicios.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\adm\\Desktop\\Familia_Organizada\\01_Arthur\\Programacao\\CSharpStudySchedule\\csharp-study-schedule\\14-framework-aspnet-core\\exercicios\\exercicios.csproj",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}
