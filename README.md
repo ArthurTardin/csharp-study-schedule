@@ -1,4 +1,4 @@
-# [![My Skills](https://skillicons.dev/icons?i=cs)](https://skillicons.dev) Cronograma de estudo - C#
+# [![My Skills](https://skillicons.dev/icons?i=cs)](https://skillicons.dev) Cronograma de estudo - C# [![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)](https://github.com/)
 
 ## Objetivo
 
